@@ -1,5 +1,14 @@
 # Setting up Plebnet Playground on MacOS
 
+### Resources:
+
+- [Plebnet Playground Docker Readme](https://github.com/PLEBNET-PLAYGROUND/plebnet-playground-docker)
+- [Bitcoin Core](https://github.com/bitcoin/bitcoin)
+- [Bitcoin MacOS Build Guide](https://github.com/bitcoin/bitcoin/blob/master/doc/build-osx.md)
+- [Plebnet Fun](https://www.plebnet.fun/)
+
+____
+
 Plebnet Playgound is a sandbox environment to help Bitcoin plebs get under the hood with Lightning LND and play around wihout using real sats. This brief tutorial is to help noobies setup Plebnet Playground and Bitcoin Core on MacOS.  
 
 **NOTE:** You can install all of this in a virtual environment if you have one. We will be doing this on our everyday admin user account. Nothing in this tutorial should break or interfere with the daily running of your machine. 
@@ -10,17 +19,17 @@ MacOS laptop or desktop running MacOS Mojave or above. We have not tested on ear
 
 >? on any compatability issues with newest M1 chips vs Intel??
 
-- The Xcode Command Line Tools are a collection of build tools for macOS. These tools must be installed in order to build Bitcoin Core from source.
+- The Xcode Command Line Tools are a collection of build tools for macOS. These tools must be installed in order to build Bitcoin Core from source. More about that [here](https://www.freecodecamp.org/news/install-xcode-command-line-tools/). 
 
 	To install, run the following command from your terminal:
 
 `xcode-select --install`
 
-- You will need a Github account. If you haven't got one, set one up. We will use the git version control to fork and clone both Bitcoin Core and Plebnet Playground onto our local machine. 
+- You will need a [Github](https://github.com/) account. If you haven't got one, set one up. We will use the git version control to fork and clone both Bitcoin Core and Plebnet Playground onto our local machine. 
 
-NOTE: If you are not familiar with Git yet, don't worry, there is another lesson on this. For the moment just think of it as a version control protocol that allows you to copy *a version* of the source code onto your local machine to then compile and run it locally. 
+NOTE: If you are not familiar with [Git](https://git-scm.com/book/en/v2) yet, don't worry, there is another lesson on this. For the moment just think of it as a version control protocol that allows you to copy *a version* of the source code onto your local machine to then compile and run it locally. 
 
-- Plebnet Playground runs on Docker which is an open-source containerization platform used for developing, deploying, and managing applications in lightweight virtualized environments called containers. 
+- Plebnet Playground runs on [Docker](https://www.docker.com/) which is an open-source containerization platform used for developing, deploying, and managing applications in lightweight virtualized environments called containers. 
 
 - The default Terminal that runs either bash or zsh and the Homebrew Package manager. 
 
@@ -97,7 +106,7 @@ We are going to use Github to "fork" or copy the latest version of the Bitcoin/B
 
 ![fork](./images/4.jpg)
 
-Here is mine Niko48 @ndiconti. You should see both under your remote `Repositories` tab. 
+Here is what my Github looks like below. You should see both forks under your remote `Repositories` tab. 
 
 ![images](./images/1.jpg)
 
@@ -107,7 +116,7 @@ We are now going to use the `git clone` command to yes, clone the version you ju
 
 Github conveniantly gives you an easy way to copy the comand straight to your terminal. 
 
-- Enter your forked Github repostiory and find the green CODE button.
+- Enter your forked Github repostiory and find the green `Code` button.
 
 ![clone](./images/2.jpg)
 
@@ -149,7 +158,7 @@ Now for the the Bitcoin clone we want to *check out* that the version we have do
 
 - We do this by going into the Bitcoin/bitcoin original repo, scroll down to the bottom right `Releases > Latest`
 
-- This brings up Bitcoin Core 23.0 as of time of writing, and on the subheading we can see a hash on the right which begins with `fcf6c8`
+- This brings up **Bitcoin Core 23.0** as of time of writing, and on the subheading we can see a hash on the right which begins with `fcf6c8`
 
 ![checkout](./images/22.jpg)
 
@@ -163,7 +172,7 @@ Lets copy this and go back to Terminal and type:
 
 `git checkout fcf6c8f4eb217763545ede1766831a6b93f583bd`
 
-This wil tell us: 
+This will report back to us: 
 
 ```
 You are in 'detached HEAD' state. You can look around, make experimental
