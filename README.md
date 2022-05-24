@@ -9,9 +9,11 @@
 
 ____
 
-Plebnet Playgound is a sandbox environment to help Bitcoin plebs get under the hood with Lightning LND and play around wihout using real sats. This brief tutorial is to help noobies setup Plebnet Playground and Bitcoin Core on MacOS.  
+## Aim
 
-**CHECK:** You can install all of this in a virtual environment if you have one. We will be doing this on our everyday admin user account. Nothing in this tutorial should break or interfere with the daily running of your machine. 
+Plebnet Playground is a sandbox environment to help Bitcoin plebs get under the hood with Lightning LND and mess around without using real sats. This brief tutorial is aimed to help noobies setup Plebnet Playground and Bitcoin Core on MacOS in less that hald and hour.  
+
+**CHECK:** You can install all of this in a virtual environment if you have one. For simplicity we will be doing this on our everyday admin user account. Nothing in this tutorial should break or interfere with the daily running of your machine. 
 
 ## Prerequisites
 
