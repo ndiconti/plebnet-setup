@@ -89,7 +89,7 @@ Once installed you can use `brew info git` to confirm the version of git you are
 
 Now we are ready to rock and roll forking our code from Github. 
 
-## Forking the repositories
+## Forking repositories
 
 We are going to use Github to "fork" or copy the latest version of the Bitcoin/Bitcoin core software and the Plebnet Playground repostiories. 
 
@@ -110,7 +110,7 @@ Here is what my Github looks like below. You should see both forks under your re
 
 ![images](./images/1.jpg)
 
-## Git cloning the repositories
+## Git cloning repositories
 
 We are now going to use the `git clone` command to yes, clone the version you just forked onto your Github to your local machine. 
 
@@ -261,7 +261,9 @@ Now:
 
 This will take a while to compile so be patient. 
 
-## Launching Plebnet
+# Launching Plebnet
+
+From within the plebnet repo we can start to run the play commands:
 
 - `play`
 - `play-bitcoin`
